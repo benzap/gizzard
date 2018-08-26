@@ -17,7 +17,7 @@
   :repositories [["clojars" {:sign-releases false}]]
 
   :cljsbuild {:builds {:dev
-                       {:source-paths ["src"]
+                       {:source-paths ["src" "dev"]
                         :compiler {:output-dir "resources/public/js/compiled/out"
                                    :output-to "resources/public/js/compiled/gizzard.js"
                                    :optimizations :whitespace

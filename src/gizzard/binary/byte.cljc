@@ -10,8 +10,12 @@
    (defn signed [x]
      (assert (<= x 127) "Integer value cannot be greater than 127")
      (assert (>= x -128) "Integer value cannot be less than -128")
-     ;; unfinished
-     (byte x)))
+     (if (< x 0)
+       (byte (- (+ (bit-not (bit-and x 0xFF)) 1)))
+       (byte x))))
+
+
+;; (bit-not 0xff)
 
 
 (defn unsigned
@@ -31,8 +35,9 @@
 (defn shift-right
   ""
   [x n]
-  (byte (bit-shift-right (bit-and 0xFF x) n)))
-
+  (if-not (> n 7)
+    (byte (bit-shift-right (bit-and 0xFF x) n))
+    (byte 0)))
 
 ;; (shift-right (unsigned 255) 6)
 

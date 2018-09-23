@@ -1,6 +1,6 @@
 # Makefile for Gizzard
 .PHONY: test test-clj test-cljs
-.PHONY: help version
+.PHONY: help clean version
 
 
 help:
@@ -12,7 +12,8 @@ help:
 	@echo "    test-clj   Perform tests in clojure."
 	@echo "    test-cljs  Perform tests in clojurescript."
 	@echo ""
-	@echo "    version    Get Project Version"
+	@echo "    clean      Remove all build artifacts."
+	@echo "    version    Get Project Version."
 
 
 test: test-clj test-cljs
@@ -25,6 +26,11 @@ test-clj:
 test-cljs:
 	lein doo once
 
+
+clean:
+	lein clean
+	rm -rf ./target
+	rm -rf ./resources/public/js/compiled
 
 version:
 	lein project-version

@@ -5,10 +5,10 @@
 
 
 (deftest test-unsigned
-  (is (= (byte/unsigned 255) (byte -1)))
-  (is (= (byte/unsigned 0) (byte 0)))
-  (is (= (byte/unsigned 128) (byte -128)))
-  (is (= (byte/unsigned 129) (byte -127))))
+  (is (= (byte/unsigned 255) (byte/signed -1)))
+  (is (= (byte/unsigned 0) (byte/signed 0)))
+  (is (= (byte/unsigned 128) (byte/signed -128)))
+  (is (= (byte/unsigned 129) (byte/signed -127))))
 
 
 (deftest test-shift-right

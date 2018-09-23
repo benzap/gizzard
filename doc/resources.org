@@ -1,0 +1,16 @@
+#+TITLE: Resources for writing Gizzard
+#+AUTHOR: Benjamin Zaporzan
+#+DATE: 2018-09-22
+#+EMAIL: benzaporzan@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t
+
+
+* Binary Formats
+  - https://en.wikipedia.org/wiki/LEB128
+
+* Reading and Writing Binary in Clojure
+  - [[https://github.com/clojure-cookbook/clojure-cookbook/blob/master/04_local-io/4-19_handle-binary-files.asciidoc][Clojure Cookbook Chapter]]
+
+* Writing Binary data in Javascript
+  - [[https://stackoverflow.com/questions/26244126/writing-byte-array-to-binary-file-javascript][SO Article #1]]

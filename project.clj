@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.10.339"]
                  [org.clojure/tools.reader "1.3.0"]
-                 [org.clojure/tools.cli "0.3.7"]
+                 [org.clojure/tools.cli "0.4.0"]
                  [funcool/cuerdas "2.0.6"]
                  [com.rpl/specter "1.1.1"]]
 
@@ -20,7 +20,7 @@
                        {:source-paths ["src" "dev"]
                         :compiler {:output-dir "resources/public/js/compiled/out"
                                    :output-to "resources/public/js/compiled/gizzard.js"
-                                   :optimizations :whitespace
+                                   :optimizations :none
                                    :pretty-print true
                                    :source-map "resources/public/js/compiled/gizzard.js.map"}}
                        :prod

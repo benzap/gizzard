@@ -10,7 +10,7 @@
 
 
 (defn pad-bytes [xs]
-  (let [c (count xs)]
+  (let [c (count xs)]))
 
 
 (defn encode-unsigned

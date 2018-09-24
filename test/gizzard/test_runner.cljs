@@ -8,7 +8,8 @@
    [gizzard.core-test]
 
    ;; ./binary
-   [gizzard.binary.byte-test]))
+   [gizzard.binary.byte-test]
+   [gizzard.binary.leb-test]))
 
 
 (doo-tests
@@ -17,4 +18,5 @@
  'gizzard.core-test
 
  ;; ./binary
- 'gizzard.binary.byte-test)
+ 'gizzard.binary.byte-test
+ 'gizzard.binary.leb-test)

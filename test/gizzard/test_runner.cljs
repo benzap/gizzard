@@ -9,6 +9,7 @@
 
    ;; ./binary
    [gizzard.binary.byte-test]
+   [gizzard.binary.float-test]
    [gizzard.binary.leb-test]))
 
 
@@ -19,4 +20,5 @@
 
  ;; ./binary
  'gizzard.binary.byte-test
+ 'gizzard.binary.float-test
  'gizzard.binary.leb-test)

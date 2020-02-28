@@ -26,9 +26,9 @@
 
 (defn decode-unsigned
   "Decodes an unsigned LEB128 sequence into a Long."
-  [xs]
+  [xs])
   ;;TODO: implement in the future
-  )
+  
 
 
 (defn encode-signed*
@@ -50,9 +50,9 @@
 
 (defn decode-signed
   "Decodes a signed LEB128 sequence into a Long."
-  [xs]
+  [xs])
   ;;TODO: implement in the future
-  )
+  
 
 
 (extend-protocol LEB128
